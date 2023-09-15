@@ -8,7 +8,8 @@ const styles=StyleSheet.create({
         flex:1,
         flexDirection:'column',
         alignItems:'center',
-        justifyContent:'center'
+        justifyContent:'center',
+        alignContent:'center',
     },
     formContainer:{
         flex:1,
@@ -17,7 +18,6 @@ const styles=StyleSheet.create({
         backgroundColor:'rgba(199,173,173,0.2)',
         padding:50,
         margin:50,
-        marginBottom:150,
         alignItems:'center',
         borderRadius:20
     },
@@ -95,7 +95,16 @@ const styles=StyleSheet.create({
         width:40,
         alignItems:'center',
         textAlign:'center'
-    }
+    },
+    userNameStyle:{alignSelf:'center',alignItems:'center',marginTop:100},
+    userNameText:{fontSize: 30, color: 'white', fontWeight: '700' },
+    questionNoStyle:{ fontSize: 20, color: 'white', fontWeight: '700',textAlign:'center'},
+    horizontalLine:{ width: 370, backgroundColor: '#5e69ee', borderColor: 'white', borderBottomColor: 'white', borderWidth: 1, marginTop: 1 },
+    resultContainer:{ backgroundColor: '#5e69ee', alignContent: 'center', alignItems: 'center', padding: 50, flex: 1 },
+    winOrLost:{ fontSize: 50, color: 'white', fontWeight: '700' },
+    resultImageStyle:{ height: 350, width: 350 },
+    congratesOrSorry:{ fontSize: 30, color: 'white' },
+    scoreStyle:{ alignContent: 'center', justifyContent: 'center' },
 })
 
 export default styles;
